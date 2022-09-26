@@ -44,7 +44,7 @@
 }
 
 
-/* Global reset
+/* Globals
 ========================================
 */
 
@@ -83,9 +83,16 @@ html {
   scroll-padding-top: 2rem;
 }
 
-/* Print spacing */
-@page {
-  15mm 20mm;
+/* Backdrop */
+
+::backdrop {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 /* Hidden elements */
@@ -94,8 +101,13 @@ html {
   display: none;
 }
 
+/* Print spacing */
+@page {
+  15mm 20mm;
+}
 
-/* Globals
+
+/* Body
 ========================================
 */
 
@@ -957,16 +969,6 @@ dialog > *:first-child {
 
 dialog > *:last-child {
   margin-bottom: 0;
-}
-
-::backdrop {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-@media (prefers-color-scheme: dark) {
-  ::backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
 }
 
 
