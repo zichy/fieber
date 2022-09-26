@@ -31,7 +31,7 @@ A npm package may come in the future.
 
 You can easily change the basic appearance like text and colors by adjusting the [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
 
-Things to think about when using *fieber.css* as a foundation for your website:
+Things to keep in mind when using *fieber.css*:
 
 * Classless frameworks come with a lot of limitations. Building a more advanced layout is up to you.
 * This framework does not include a full-featured CSS reset. You may want to add styles, e.g. to remove the default `margin` of text elements.
