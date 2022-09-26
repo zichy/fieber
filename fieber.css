@@ -847,7 +847,7 @@ meter {
 }
 
 ::-webkit-meter-bar {
-  background-color: hsl(var(--hs-static), var(--l-highest));
+  background: hsl(var(--hs-static), var(--l-highest));
   height: 2rem;
   border-radius: 0;
   border: 2px solid hsl(var(--hs-static), var(--l-low));
