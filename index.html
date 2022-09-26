@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="referrer" content="no-referrer">
+	<meta name="color-scheme" content="dark light">
+	<meta name="theme-color" content="#0000ff" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
+
+	<title>fieber.css framework</title>
+
+	<link href="fieber.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>fieber.css</h1>
+
+		<nav>
+			<ul role="list">
+				<li><a href="#inline-elements">Inline</a></li>
+				<li><a href="#headlines">Headlines</a></li>
+				<li><a href="#paragraph">Paragraph</a></li>
+				<li><a href="#aside">Aside</a></li>
+				<li><a href="#lists">Lists</a></li>
+				<li><a href="#quote">Quote</a></li>
+				<li><a href="#code">Code</a></li>
+				<li><a href="#table">Table</a></li>
+				<li><a href="#media">Media</a></li>
+				<li><a href="#form">Form</a></li>
+				<li><a href="#misc-elements">Miscellaneous</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<article style="background-color: hsl(var(--hs-highlight), var(--l-highlight)); padding: 1rem 2rem;">
+			<h2>⚠️ Info</h2>
+			<p>This is the <strong>fieber.css</strong> demo page with an overview of all supported elements.</p>
+			<p>You can find <a href="https://github.com/zichy/fieber">more information on GitHub</a>.</p>
+		</article>
+
+		<section>
+			<h2 id="inline-elements">Inline elements</h2>
+
+			<p><strong>Strong</strong>, <em>Emphasized</em>, <a href="#">Internal link</a>, <a href="https://example.org">External link</a>, <button>Button</button>, <mark>Mark</mark>, <small>Small</small>, <sub>Subscript</sub>, <sup>Superscript</sup>, <del>Deleted</del>, <ins>Inserted</ins>, <dfn>Definition</dfn>, <q>Quote</q>, <kbd>Keyboard input</kbd>, <code>Code</code>, <samp>Sample output</samp>, <var>Variable</var>, <abbr title="Title">Abbreviation</abbr></p>
+
+			<p>Combined examples: <del><q>Deleted quote</q></del>, <code><a href="#">Linked code</a></code>, <strong><sup>Strong superscript</sup></strong></p>
+		</section>
+
+		<section>
+			<h2 id="headlines">Headlines</h2>
+			<h3>Third headline</h3>
+			<h4>Fourth headline</h4>
+			<h5>Fifth headline</h5>
+			<h6>Sixth headline</h6>
+		</section>
+
+		<section>
+			<h2 id="paragraph">Paragraph</h2>
+
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+		</section>
+
+		<section>
+			<h2 id="aside">Aside</h2>
+
+			<aside>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+			</aside>
+
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+		</section>
+
+		<section>
+			<h2 id="lists">Lists</h2>
+
+			<h3>Unordered</h3>
+
+			<ul>
+				<li><p>First item</p></li>
+				<li><p>Second item</p></li>
+				<li>
+					<p>Third item</p>
+					<ul>
+						<li>First item</li>
+						<li>Second item</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>Ordered</h3>
+
+			<ol>
+				<li><p>First item</p></li>
+				<li><p>Second item</p></li>
+				<li>
+					<p>Third item</p>
+					<ol>
+						<li>First item</li>
+						<li>Second item</li>
+					</ol>
+				</li>
+			</ol>
+
+			<h3>Navigation</h3>
+
+			<nav>
+				<ul role="list">
+					<li><a href="#">First page</a></li>
+					<li><a href="#">Second page</a></li>
+					<li><a href="#">Third page</a></li>
+				</ul>
+			</nav>
+
+			<h3>Description</h3>
+
+			<dl>
+				<dt>First term</dt>
+				<dd>First details</dd>
+				<dt>Second term</dt>
+				<dd>Second details</dd>
+			</dl>
+		</section>
+
+		<section>
+			<h2 id="quote">Quote</h2>
+
+			<figure>
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+				</blockquote>
+				<figcaption>by <cite>Author</cite></figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2 id="code">Code</h2>
+
+			<figure>
+				<pre><code>static void __zstd_exit(void *ctx)
+{
+	zstd_comp_exit(ctx);
+	zstd_decomp_exit(ctx);
+}</code></pre>
+				<figcaption>Code description</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2 id="table">Table</h2>
+			
+			<table>
+				<caption>Table caption</caption>
+				<thead>
+					<tr>
+						<th scope="col">Item</th>
+						<th scope="col">Color</th>
+						<th scope="col">Amount</th>
+						<th scope="col">Price per pound</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Apple</td>
+						<td>Red</td>
+						<td>3</td>
+						<td>$ 1.32</td>
+					</tr>
+					<tr>
+						<td>Orange</td>
+						<td>Orange</td>
+						<td>2</td>
+						<td>$ 1.60</td>
+					</tr>
+					<tr>
+						<td>Banana</td>
+						<td>Yellow</td>
+						<td>1</td>
+						<td>$ 10</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th scope="row">Totals</th>
+						<td></td>
+						<td>6</td>
+						<td>$ 12.92</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+
+		<section>
+			<h2 id="media">Media</h2>
+
+			<h3>Image</h3>
+
+			<figure>
+				<picture>
+					<source srcset="demo/image-large.webp 1x, demo/image-large_2x.webp 2x" media="(min-width: 768px)">
+					<source srcset="demo/image-medium.webp 1x, demo/image-medium_2x.webp 2x" media="(min-width: 560px)">
+					<img src="demo/image-small.webp" width="360" height="203" alt="Alternative text" loading="lazy">
+				</picture>
+				<figcaption>Image caption</figcaption>
+			</figure>
+
+			<h3>Audio</h3>
+
+			<figure>
+				<audio controls>
+					<source src="demo/audio.ogg" type="audio/ogg" />
+					<source src="demo/audio.mp3" type="audio/mpeg" />
+				</audio>
+				<figcaption>Audio caption</figcaption>
+			</figure>
+
+			<h3>Video</h3>
+
+			<figure>
+				<video poster="demo/poster.webp" controls playsinline>
+					<source src="demo/video.webm" type="video/webm">
+				</video>
+				<figcaption>Source: Big Buck Bunny, Blender Foundation (<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>)</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2 id="form">Form</h2>
+
+			<form>
+				<label for="form-1">Text input</label>
+				<input type="text" id="form-1" aria-describedby="help-1" placeholder="Placeholder" required>
+				<p id="help-1">Additional information about this input.</p>
+
+				<label for="form-2">Invalid input</label>
+				<input type="text" id="form-2" aria-invalid="true" aria-errormessage="error-1" required>
+				<p id="error-1">Error message</p>
+
+				<label for="form-3">Disabled input</label>
+				<input type="text" id="form-3" disabled value="Value">
+
+				<label for="form-3">Select</label>
+				<select>
+					<optgroup label="Group 1">
+						<option>Option 1 lorem ipsum dolor sit amet, consetetur sadipscing elitr</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</optgroup>
+					<optgroup label="Group 2">
+						<option>Option 4</option>
+						<option>Option 5</option>
+						<option>Option 6</option>
+					</optgroup>
+				</select>
+
+				<label for="form-4">Select (multiple options)</label>
+				<select id="form-4" multiple>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</select>
+
+				<label for="form-5">Range input</label>
+				<input type="range" id="form-5" min="0" max="10" value="8">
+
+				<label for="form-6">Color input</label>
+				<input type="color" id="form-6" value="#96d194">
+
+				<label for="form-7">File input</label>
+				<input type="file" id="form-7">
+
+				<label for="form-8">Textarea <small>(Optional)</small></label>
+				<textarea id="form-8" rows="5"></textarea>
+
+				<label>
+					<input type="checkbox" required>
+					<span>Checkbox lorem ipsum dolor sit amet, <a href="https://example.org">consetetur</a> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</span>
+				</label>
+
+				<fieldset>
+					<legend>Input group</legend>
+
+					<label>
+						<input type="radio" name="input-group">
+						<span>Option 1</span>
+					</label>
+
+					<label>
+						<input type="radio" name="input-group">
+						<span>Option 2</span>
+					</label>
+
+					<label>
+						<input type="radio" name="input-group">
+						<span>Option 3</span>
+					</label>
+				</fieldset>
+
+				<button type="submit">Button</button>
+
+				<input type="submit" value="Submit">
+
+				<input type="reset" value="Reset">
+			</form>
+		</section>
+
+		<section>
+			<h2 id="misc-elements">Miscellaneous elements</h2>
+
+			<h3>Details</h3>
+
+			<details>
+				<summary>Summary</summary>
+
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+			</details>
+
+			<h3>Dialog</h3>
+
+			<button id="dialogButton">Open dialog</button>
+
+			<dialog id="dialog">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+				<form method="dialog">
+					<button>Close dialog</button>
+				</form>
+			</dialog>
+
+			<h3>Ruby annotation</h3>
+
+			<ruby>
+				漢<rp>(</rp><rt>Kan</rt><rp>)</rp>
+				字<rp>(</rp><rt>Ji</rt><rp>)</rp>
+			</ruby>
+
+			<ruby>
+				2022<rp>(</rp><rt>Year</rt><rp>)</rp>
+				09<rp>(</rp><rt>Month</rt><rp>)</rp>
+				24<rp>(</rp><rt>Date</rt><rp>)</rp>
+			</ruby>
+
+			<h3>Progress</h3>
+
+			<label for="progress">Progress: 80 %</label>
+			<progress id="progress" max="10" value="8"></progress>
+
+			<h3>Meters</h3>
+
+			<label for="meter-1">Meter: 80 of 100</label>
+			<meter id="meter-1" min="0" max="100" low="33" high="66" optimum="80" value="80"></meter>
+
+			<label for="meter-2">Meter: 60 of 100</label>
+			<meter id="meter-2" min="0" max="100" low="33" high="66" optimum="80" value="60"></meter>
+
+			<label for="meter-3">Meter: 30 of 100</label>
+			<meter id="meter-3" min="0" max="100" low="33" high="66" optimum="80" value="30"></meter>
+
+			<h3>Horizontal rule</h3>
+
+			<hr>
+		</section>
+	</main>
+
+	<footer>
+		<p>Created by <a href="https://github.com/zichy">zichy</a>. Licensed under the <a href="https://opensource.org/licenses/MIT" rel="license">MIT License</a>. Code on <a href="https://github.com/zichy/fieber">GitHub</a>.</p>
+	</footer>
+
+	<script type="text/javascript">
+		document.getElementById('dialogButton').addEventListener('click', () => {
+			document.getElementById('dialog').showModal();
+		});
+	</script>
+</body>
+</html>
