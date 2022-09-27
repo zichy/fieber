@@ -625,7 +625,7 @@ legend {
   padding: 0 1rem;
 }
 
-label :where(small) {
+:where(legend, label) small {
   color: hsl(var(--hs-static), var(--l-low));
   font-weight: normal;
 }
