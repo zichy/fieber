@@ -642,8 +642,8 @@ label:has([type='checkbox' i], [type='radio' i]) {
   font-family: var(--f-serif);
   font-weight: normal;
   display: grid;
-  grid-template-columns: 2.5rem 1fr;
-  column-gap: 1rem;
+  grid-template-columns: 1.25em 1fr;
+  column-gap: 1.5rem;
   padding-bottom: 0;
 }
 
@@ -653,8 +653,8 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
 
 :where([type='checkbox' i], [type='radio' i]) {
   flex-shrink: 0;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.25em;
+  height: 1.25em;
   position: relative;
   margin: 0.2rem 0 0;
   border: 2px solid hsl(var(--hs-interactive), var(--l-interactive));
@@ -665,30 +665,19 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
   border-radius: 50%;
 }
 
-[type='checkbox' i]:checked {
+:where([type='checkbox' i], [type='radio' i]):checked {
   background-color: hsl(var(--hs-interactive), var(--l-interactive));
 }
 
-:where([type='checkbox' i], [type='radio' i]):checked::after {
+[type='checkbox' i]:checked::after {
+  content: '\2713';
+  color: hsl(var(--hs-static), var(--l-highest));
+  font-weight: bold;
+  line-height: 1;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-[type='checkbox' i]:checked:after {
-  content: '\2713';
-  color: hsl(var(--hs-static), var(--l-highest));
-  line-height: 1;
-}
-
-[type='radio' i]:checked:after {
-  content: '';
-  background-color: hsl(var(--hs-interactive), var(--l-interactive));
-  display: block;
-  width: 0.75em;
-  height: 0.75em;
-  border-radius: 50%;
 }
 
 /* Color input */
