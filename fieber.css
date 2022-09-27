@@ -774,7 +774,7 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
 /* Select */
 
 select {
-  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpolygon points="5 10 10 0 0 0"/%3E%3C/svg%3E') no-repeat calc(100% - 2rem) center / 1.5rem;
+  background: hsl(var(--hs-static), var(--l-highest)) url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpolygon points="5 10 10 0 0 0"/%3E%3C/svg%3E') no-repeat calc(100% - 2rem) center / 1.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   padding-right: 5.5rem;
