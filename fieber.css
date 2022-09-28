@@ -64,7 +64,7 @@
   text-rendering: optimizeLegibility;
 }
 
-/* Interactive states */
+/* Interaction */
 
 ::selection {
   background: hsl(var(--hs-interactive), var(--l-interactive));
@@ -104,6 +104,7 @@ html {
 }
 
 /* Print spacing */
+
 @page {
   15mm 20mm;
 }
@@ -146,7 +147,7 @@ body {
 }
 
 
-/* Link
+/* Links
 ========================================
 */
 
@@ -794,7 +795,7 @@ select[multiple] {
   padding-right: 1rem;
 }
 
-/* Button */
+/* Buttons */
 
 :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
   font-family: var(--f-sans);
