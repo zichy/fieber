@@ -594,10 +594,12 @@ th {
 }
 
 :where(input:not([type='button' i]):not([type='submit' i]):not([type='reset' i]):not([type='checkbox' i]):not([type='radio' i]):not([type='image' i]), textarea, select) {
+  color: hsl(var(--hs-static), var(--l-lowest));
   display: block;
   width: 100%;
   padding: 0.75rem 1rem;
   border: 2px solid hsl(var(--hs-interactive), var(--l-interactive));
+  border-radius: 0;
 }
 
 :where([type='color' i], [type='range' i]) {
