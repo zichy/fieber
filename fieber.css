@@ -948,6 +948,7 @@ form :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
 
 dialog[open] {
   background-color: hsl(var(--hs-static), var(--l-highest));
+  color: hsl(var(--hs-static), var(--l-lowest));
   display: block;
   max-width: var(--w-body, 100%);
   min-width: calc(var(--w-body) / 2);
