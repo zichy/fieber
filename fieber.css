@@ -25,6 +25,8 @@
   --f-size: clamp(1.6rem, 1.75vw, 2rem);
   --f-line: 1.5;
 
+  --i-triangle: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpolygon fill="black" points="5 10 10 0 0 0"/%3E%3C/svg%3E');
+
   --w-body: 80ch;
 }
 
@@ -40,6 +42,8 @@
     --l-interactive: 80%;
     --l-highlight: 15%;
     --l-error: 80%;
+
+    --i-triangle: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpolygon fill="white" points="5 10 10 0 0 0"/%3E%3C/svg%3E');
   }
 }
 
@@ -775,7 +779,7 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
 /* Select */
 
 select {
-  background: hsl(var(--hs-static), var(--l-highest)) url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpolygon points="5 10 10 0 0 0"/%3E%3C/svg%3E') no-repeat calc(100% - 2rem) center / 1.5rem;
+  background: hsl(var(--hs-static), var(--l-highest)) var(--i-triangle) no-repeat calc(100% - 2rem) center / 1.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   padding-right: 5.5rem;
