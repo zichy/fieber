@@ -241,8 +241,17 @@
 				<label for="form-3">Disabled input</label>
 				<input type="text" id="form-3" disabled value="Value">
 
-				<label for="form-4">Select</label>
-				<select id="form-4">
+				<label for="form-4">Datalist</label>
+				<input type="search" id="form-4" list="form-datalist">
+
+				<datalist id="form-datalist">
+					<option value="Option 1">
+					<option value="Option 2">
+					<option value="Option 3">
+				</datalist>
+
+				<label for="form-5">Select</label>
+				<select id="form-5">
 					<optgroup label="Group 1">
 						<option>Option 1 lorem ipsum dolor sit amet, consetetur sadipscing elitr</option>
 						<option>Option 2</option>
@@ -255,24 +264,24 @@
 					</optgroup>
 				</select>
 
-				<label for="form-5">Select (multiple options)</label>
-				<select id="form-5" multiple>
+				<label for="form-6">Select (multiple options)</label>
+				<select id="form-6" multiple>
 					<option>Option 1</option>
 					<option>Option 2</option>
 					<option>Option 3</option>
 				</select>
 
-				<label for="form-6">Range input</label>
-				<input type="range" id="form-6" min="0" max="10" value="8">
+				<label for="form-7">Range input</label>
+				<input type="range" id="form-7" min="0" max="10" value="8">
 
-				<label for="form-7">Color input</label>
-				<input type="color" id="form-7" value="#96d194">
+				<label for="form-8">Color input</label>
+				<input type="color" id="form-8" value="#96d194">
 
-				<label for="form-8">File input</label>
-				<input type="file" id="form-8">
+				<label for="form-9">File input</label>
+				<input type="file" id="form-9">
 
-				<label for="form-9">Textarea <small>(Optional)</small></label>
-				<textarea id="form-9" rows="5"></textarea>
+				<label for="form-10">Textarea <small>(Optional)</small></label>
+				<textarea id="form-10" rows="5"></textarea>
 
 				<label>
 					<input type="checkbox" required>
