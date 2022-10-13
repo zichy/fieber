@@ -40,7 +40,7 @@ Things to keep in mind when using *fieber.css*:
 * The current font stacks may not be perfect for writing systems like Arabic script.
 * Remember to respect your users’ [motion preferences](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) when adding animations. ([Example](https://github.com/csstools/sanitize.css/blob/main/reduce-motion.css))
 
-There are many [other classless frameworks](https://www.cssbed.com) that may be better suited for your use case.
+There are many [other classless frameworks](https://www.cssbed.com) that may be better suited for your specific use case.
 
 ## Browser support
 
