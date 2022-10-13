@@ -433,14 +433,14 @@ caption {
 ========================================
 */
 
+:where(pre, code, samp, var) {
+  background-color: hsl(var(--hs-static), var(--l-higher));
+}
+
 :where(code, samp, var) {
   font-size: 0.85em;
   font-family: var(--f-mono);
   padding: 0.2em 0.4em;
-}
-
-:where(code, pre, var) {
-  background-color: hsl(var(--hs-static), var(--l-higher));
 }
 
 pre {
@@ -454,7 +454,7 @@ pre {
   }
 }
 
-pre :where(code, samp) {
+pre code {
   background-color: transparent;
   display: block;
   white-space: pre-wrap;
