@@ -110,7 +110,7 @@ html {
 /* Print spacing */
 
 @page {
-  15mm 20mm;
+  margin: 15mm 20mm;
 }
 
 
