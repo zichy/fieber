@@ -394,6 +394,7 @@ hr {
 blockquote {
   font-size: 1.25em;
   font-style: italic;
+  line-height: calc(var(--f-line) / 1.25);
   margin: 0;
 }
 
