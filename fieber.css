@@ -399,11 +399,11 @@ blockquote {
 }
 
 blockquote > *:first-child {
-  margin-top: 0;
+  margin-block-start: 0;
 }
 
 blockquote > *:last-child {
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
 
 
@@ -473,11 +473,11 @@ details {
 }
 
 details > *:nth-child(2) {
-  margin-top: 0;
+  margin-block-start: 0;
 }
 
 details > *:last-child {
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
 
 summary {
@@ -514,11 +514,11 @@ aside {
   }
 
   aside > *:first-child {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   aside > *:last-child {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 }
 
@@ -934,7 +934,7 @@ form fieldset {
 }
 
 form p[id] {
-  margin: 0;
+  margin-block-start: 0.5rem;
 }
 
 form :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
@@ -962,11 +962,11 @@ dialog:not([open]) {
 }
 
 dialog > *:first-child {
-  margin-top: 0;
+  margin-block-start: 0;
 }
 
 dialog > *:last-child {
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
 
 
