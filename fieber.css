@@ -938,8 +938,7 @@ form p[id] {
 }
 
 form :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
-  font-size: 1em;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem;
 }
 
 
