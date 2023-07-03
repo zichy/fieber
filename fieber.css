@@ -650,7 +650,7 @@ label:has([type='checkbox' i], [type='radio' i]) {
   font-weight: normal;
   display: grid;
   grid-template-columns: 1.25em 1fr;
-  column-gap: 1.5rem;
+  column-gap: 0.5em;
   padding-bottom: 0;
 }
 
