@@ -171,7 +171,7 @@ a:any-link {
   text-decoration-thickness: 0.125em;
 }
 
-a:any-link:where(:hover, :focus) {
+a:any-link:hover {
   background-color: hsl(var(--hs-interactive), var(--l-interactive));
   color: hsl(var(--hs-static), var(--l-highest));
   text-decoration-line: none;
