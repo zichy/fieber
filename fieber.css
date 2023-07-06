@@ -846,6 +846,10 @@ select[multiple] {
   }
 }
 
+form :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
+  padding: 1rem 1.5rem;
+}
+
 /* Meter & Progress */
 
 :where(meter, progress) {
@@ -943,12 +947,12 @@ form fieldset {
   margin: 3rem 0;
 }
 
-form p[id] {
-  margin-block-start: 0.5rem;
+fieldset label:not(:first-of-type) {
+  margin-top: 2rem;
 }
 
-form :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
-  padding: 1rem 1.5rem;
+form p[id] {
+  margin-block-start: 0.5rem;
 }
 
 
