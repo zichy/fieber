@@ -853,7 +853,7 @@ form :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
 
 :where(meter, progress) {
   width: 100%;
-  height: 2rem;
+  height: 3rem;
   border: 2px solid hsl(var(--hs-static), var(--l-low));
 }
 
@@ -870,9 +870,9 @@ meter {
 
 ::-webkit-meter-bar {
   background: hsl(var(--hs-static), var(--l-highest));
-  height: 2rem;
-  border-radius: 0;
+  height: 3rem;
   border: 2px solid hsl(var(--hs-static), var(--l-low));
+  border-radius: 0;
 }
 
 ::-webkit-meter-optimum-value {
