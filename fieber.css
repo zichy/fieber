@@ -892,11 +892,11 @@ meter {
 }
 
 ::-webkit-meter-even-less-good-value {
-  background: hsl(var(--hs-error), var(--l-error));
+  background: hsl(var(--hs-error), var(--l-high));
 }
 
 :-moz-meter-sub-sub-optimum::-moz-meter-bar {
-  background: hsl(var(--hs-error), var(--l-error));
+  background: hsl(var(--hs-error), var(--l-high));
 }
 
 ::-webkit-progress-bar {
