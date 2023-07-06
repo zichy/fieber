@@ -25,6 +25,12 @@
   --f-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --f-serif: Cambria, Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
   --f-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --f-body: var(--f-serif);
+  --f-heading: var(--f-sans);
+  --f-input: var(--f-sans);
+  --f-code: var(--f-mono);
+
   --f-size: clamp(1.6rem, 1.75vw, 2rem);
   --f-line: 1.5;
 
@@ -127,7 +133,7 @@ body {
   background-color: hsl(var(--hs-static), var(--l-highest));
   color: hsl(var(--hs-static), var(--l-lowest));
   font-size: var(--f-size);
-  font-family: var(--f-serif);
+  font-family: var(--f-body);
   line-height: var(--f-line);
 }
 
@@ -244,7 +250,7 @@ iframe {
 */
 
 :where(h1, h2, h3, h4, h5, h6) {
-  font-family: var(--f-sans);
+  font-family: var(--f-heading);
   line-height: calc(var(--f-line) / 1.25);
   hyphens: auto;
 }
@@ -416,7 +422,7 @@ blockquote > *:last-child {
 
 :where(caption, figcaption) {
   color: hsl(var(--hs-static), var(--l-low));
-  font-family: var(--f-sans);
+  font-family: var(--f-heading);
   font-size: 0.85em;
   font-style: italic;
   margin-top: 0.5rem;
@@ -442,7 +448,7 @@ caption {
 
 :where(code, samp, var) {
   font-size: 0.85em;
-  font-family: var(--f-mono);
+  font-family: var(--f-code);
   padding: 0.2em 0.4em;
 }
 
@@ -485,7 +491,7 @@ details > *:last-child {
 
 summary {
   color: hsl(var(--hs-interactive), var(--l-interactive));
-  font-family: var(--f-sans);
+  font-family: var(--f-heading);
   font-weight: bold;
   cursor: pointer;
 }
@@ -569,7 +575,7 @@ tfoot {
 }
 
 th {
-  font-family: var(--f-sans);
+  font-family: var(--f-heading);
   text-align: left;
   vertical-align: bottom;
 }
@@ -592,7 +598,7 @@ th {
 }
 
 :where(input, textarea, select, button) {
-  font-family: var(--f-serif);
+  font-family: var(--f-input);
   font-size: 1em;
 }
 
@@ -626,7 +632,7 @@ fieldset {
 /* Label & Legend */
 
 :where(legend, label) {
-  font-family: var(--f-sans);
+  font-family: var(--f-heading);
   font-weight: bold;
   display: block;
 }
@@ -649,7 +655,7 @@ textarea {
 /* Checkbox & Radio input */
 
 label:has([type='checkbox' i], [type='radio' i]) {
-  font-family: var(--f-serif);
+  font-family: var(--f-body);
   font-weight: normal;
   display: grid;
   grid-template-columns: 1.25em 1fr;
@@ -681,6 +687,7 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
 [type='checkbox' i]:checked::after {
   content: '\2713';
   color: hsl(var(--hs-static), var(--l-highest));
+  font-family: var(--f-input);
   font-weight: bold;
   line-height: 1;
   position: absolute;
@@ -806,7 +813,6 @@ select[multiple] {
 /* Buttons */
 
 :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
-  font-family: var(--f-sans);
   font-size: 0.85em;
   font-weight: bold;
   text-align: center;
