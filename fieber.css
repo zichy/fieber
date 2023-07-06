@@ -480,6 +480,7 @@ details {
   background-color: hsl(var(--hs-static), var(--l-higher));
   padding: 2rem;
   margin: 1em 0;
+  border-radius: 0.5rem;
 }
 
 details > *:nth-child(2) {
@@ -601,6 +602,7 @@ th {
 :where(input, textarea, select, button) {
   font-family: var(--f-input);
   font-size: 1em;
+  border-radius: 0.5rem;
 }
 
 :where(input:not([type='button' i]):not([type='submit' i]):not([type='reset' i]):not([type='checkbox' i]):not([type='radio' i]):not([type='image' i]), textarea, select) {
@@ -609,7 +611,6 @@ th {
   width: 100%;
   padding: 0.75rem 1rem;
   border: 2px solid hsl(var(--hs-interactive), var(--l-interactive));
-  border-radius: 0;
 }
 
 :where([type='color' i], [type='range' i]) {
@@ -627,6 +628,7 @@ th {
 fieldset {
   padding: 2rem;
   border: 2px solid hsl(var(--hs-static), var(--l-low));
+  border-radius: 0.5rem;
   break-inside: avoid;
 }
 
@@ -795,7 +797,6 @@ select {
   text-overflow: ellipsis;
   white-space: nowrap;
   padding-right: 5.5rem;
-  border-radius: 0;
   overflow: hidden;
   cursor: pointer;
 }
@@ -823,7 +824,6 @@ select[multiple] {
   min-width: 5rem;
   padding: 0.2em 0.4em;
   border: 2px solid hsl(var(--hs-interactive), var(--l-interactive));
-  border-radius: 0.5rem;
   -webkit-user-select: text;
   user-select: text;
   cursor: pointer;
