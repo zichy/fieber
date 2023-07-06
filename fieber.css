@@ -614,10 +614,6 @@ th {
   border: 2px solid hsl(var(--hs-interactive), var(--l-interactive));
 }
 
-:where([type='color' i], [type='range' i]) {
-  padding: 0;
-}
-
 /* Placeholder */
 
 ::placeholder {
@@ -704,6 +700,7 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
 
 [type='color' i] {
   height: 4rem;
+  padding: 0.5rem;
   cursor: pointer;
 }
 
@@ -723,6 +720,7 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
 
 [type='range' i] {
   margin: 1.25rem 0 0;
+  padding: 0;
   border: 0;
 }
 
