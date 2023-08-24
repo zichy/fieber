@@ -235,18 +235,18 @@ SPDX-FileCopyrightText: Copyright (c) 2022-2023 zichy
 
 			<form>
 				<label for="form-1">Text input</label>
-				<input type="text" id="form-1" aria-describedby="help-1" placeholder="Placeholder" required>
+				<input type="text" id="form-1" aria-describedby="help-1" placeholder="Placeholder" required dir="auto">
 				<p id="help-1">Additional information about this input.</p>
 
 				<label for="form-2">Invalid input</label>
-				<input type="text" id="form-2" aria-invalid="true" aria-errormessage="error-1" required>
+				<input type="text" id="form-2" aria-invalid="true" aria-errormessage="error-1" required dir="auto">
 				<p id="error-1">Error message</p>
 
 				<label for="form-3">Disabled input</label>
-				<input type="text" id="form-3" disabled value="Value">
+				<input type="text" id="form-3" disabled value="Value" dir="auto">
 
 				<label for="form-4">Datalist</label>
-				<input type="search" id="form-4" list="form-datalist">
+				<input type="search" id="form-4" list="form-datalist" dir="auto">
 
 				<datalist id="form-datalist">
 					<option value="Option 1">
@@ -285,7 +285,7 @@ SPDX-FileCopyrightText: Copyright (c) 2022-2023 zichy
 				<input type="file" id="form-9">
 
 				<label for="form-10">Textarea <small>(Optional)</small></label>
-				<textarea id="form-10" rows="5"></textarea>
+				<textarea id="form-10" rows="5" dir="auto"></textarea>
 
 				<label>
 					<input type="checkbox" required>
