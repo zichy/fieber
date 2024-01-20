@@ -48,7 +48,7 @@ There are many [other classless frameworks](https://www.cssbed.com) that may be 
 * Edge 105 and newer
 * Opera 91 and newer
 * Safari 15.4 and newer
-* <del>Firefox</del> (see [`:has`](https://caniuse.com/css-has)) 🙈
+* Firefox 121 and newer
 
 ## License
 
