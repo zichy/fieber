@@ -33,9 +33,9 @@ You can easily change the basic appearance like text and colors by adjusting the
 
 Things to keep in mind when using *fieber.css*:
 
-* Classless frameworks come with a lot of limitations. Building a more advanced layout is up to you.
-* This framework does not include a full-featured CSS reset. You may want to add styles, e.g. to remove the default `margin` of text elements.
-* Please ensure an [adequate contrast](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html) when using custom colors.
+* Classless frameworks come with a lot of limitations. Using them as a starting point for a more complex website with lots of class-based stylings may be a bad choice.
+* This framework does not include a full-featured CSS reset, e.g. most default `margin` values are kept.
+* Please ensure an [adequate contrast](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) when using custom colors.
 * Right-to-left content is supported by adding `dir="rtl"` to the `<html>` tag.
 * The current font stacks may not be perfect for writing systems like Arabic script.
 * Remember to respect your users’ [motion preferences](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) when adding animations. ([Example](https://github.com/csstools/sanitize.css/blob/main/reduce-motion.css))
