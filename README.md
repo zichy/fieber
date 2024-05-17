@@ -44,11 +44,13 @@ There are many [other classless frameworks](https://www.cssbed.com) that may be 
 
 ## Browser support
 
-* Chrome 105 and newer
-* Edge 105 and newer
-* Opera 91 and newer
-* Safari 15.4 and newer
-* Firefox 121 and newer
+| Browser | Version |
+| ---     | ---     |
+| Chrome  | 105+    |
+| Edge    | 105+    |
+| Opera   | 91+     |
+| Safari  | 15.4+   |
+| Firefox | 121+    |
 
 ## License
 
