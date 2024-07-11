@@ -52,4 +52,6 @@ There are many [other classless frameworks](https://www.cssbed.com) that may be 
 
 ## License
 
-This software is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+fieber.css is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+The example video is from *Big Buck Bunny* by the Blender Foundation ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)).
