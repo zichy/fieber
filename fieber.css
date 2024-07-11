@@ -204,8 +204,7 @@ a:any-link:hover {
 }
 
 figure {
-  margin-right: 0;
-  margin-left: 0;
+  margin-inline: 0;
   break-inside: avoid;
 }
 
@@ -274,7 +273,7 @@ iframe {
 */
 
 :where(ul, ol) {
-  padding-left: 1em;
+  padding-inline-start: 1em;
 }
 
 ul {
@@ -426,7 +425,7 @@ blockquote > *:last-child {
   font-family: var(--f-heading);
   font-size: 0.85em;
   font-style: italic;
-  margin-top: 0.5rem;
+  margin-block-start: 0.5rem;
 }
 
 caption {
@@ -503,7 +502,7 @@ summary:hover {
 }
 
 details[open] summary {
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
 }
 
 
@@ -520,8 +519,8 @@ aside {
     font-size: 0.85em;
     float: right;
     width: calc(var(--w-body) / 2.5);
-    padding-bottom: 2rem;
-    padding-left: 4rem;
+    padding-block-end: 2rem;
+    padding-inline-start: 4rem;
   }
 
   aside > *:first-child {
@@ -660,7 +659,7 @@ label:has([type='checkbox' i], [type='radio' i]) {
   display: grid;
   grid-template-columns: 1.25em 1fr;
   column-gap: 0.5em;
-  padding-bottom: 0;
+  padding-block-end: 0;
 }
 
 label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
@@ -754,7 +753,7 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
   background-color: hsl(var(--hs-static), var(--l-highest));
   height: 2rem;
   width: 2rem;
-  margin-top: calc(-1rem + 2px);
+  margin-block-start: calc(-1rem + 2px);
   border: 2px solid hsl(var(--hs-interactive), var(--l-interactive));
   border-radius: 50%;
   cursor: ew-resize;
@@ -774,7 +773,7 @@ label:has([type='checkbox' i][disabled], [type='radio' i][disabled]) {
   background-color: hsl(var(--hs-static), var(--l-highest));
   height: 2rem;
   width: 2rem;
-  margin-top: calc(-1rem + 2px);
+  margin-block-start: calc(-1rem + 2px);
   border: 2px solid hsl(var(--hs-interactive), var(--l-interactive));
   border-radius: 50%;
   cursor: ew-resize;
@@ -795,20 +794,19 @@ select {
   background: hsl(var(--hs-static), var(--l-highest)) var(--i-triangle) no-repeat calc(100% - 1rem) center / 1.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding-right: 3.5rem;
+  padding-inline-end: 3.5rem;
   overflow: hidden;
   cursor: pointer;
 }
 
 [dir='rtl' i] select {
   background-position: 1rem center;
-  padding-right: 1rem;
-  padding-left: 3.5rem;
+  padding-inline: 3.5rem 1rem;
 }
 
 select[multiple] {
   background-image: none;
-  padding-right: 1rem;
+  padding-inline-end: 1rem;
 }
 
 /* Buttons */
@@ -858,13 +856,13 @@ form :where(button, [type='button' i], [type='submit' i], [type='reset' i]) {
 }
 
 label + :where(meter, progress) {
-  margin-top: 0.5rem;
+  margin-block-start: 0.5rem;
 }
 
 meter {
   background: transparent;
   display: block;
-  margin-bottom: 1em;
+  margin-block-end: 1em;
   border: 2px solid hsl(var(--hs-static), var(--l-low));
 }
 
@@ -935,11 +933,11 @@ meter {
 /* Form spacing */
 
 form label:not(:first-of-type) {
-  margin-top: 3rem;
+  margin-block-start: 3rem;
 }
 
 form label + :where(input, textarea, select) {
-  margin-top: 0.5rem;
+  margin-block-start: 0.5rem;
 }
 
 form fieldset {
@@ -947,7 +945,7 @@ form fieldset {
 }
 
 fieldset label:not(:first-of-type) {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
 }
 
 form p[id] {
@@ -988,16 +986,16 @@ dialog > *:last-child {
 
 @media screen {
   body > header {
-    margin-bottom: 4em;
+    margin-block-end: 4em;
   }
 
   main > :where(section, article),
   body > footer {
-    margin-top: 4em;
+    margin-block-start: 4em;
     clear: both;
   }
 
   body > footer {
-    margin-top: 4em;
+    margin-block-start: 4em;
   }
 }
