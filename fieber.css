@@ -966,6 +966,10 @@ dialog[open] {
   border: 2px solid hsl(var(--hs-static), var(--l-low));
 }
 
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
 dialog:not([open]) {
   display: none;
 }
