@@ -245,6 +245,7 @@ iframe {
 
 :where(h2, h3, h4, h5, h6):target {
   background-color: Mark;
+  color: MarkText;
 }
 
 
@@ -323,13 +324,6 @@ a abbr[title] {
 
 :where(sub, sup) {
   line-height: 0;
-}
-
-/* Mark */
-
-mark {
-  background-color: Accent;
-  color: currentColor;
 }
 
 /* Quote */
