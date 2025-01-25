@@ -12,7 +12,7 @@ Check out the [**demo site**](https://fieber.hack.re).
 * Responsive layout 🖥📱
 * Light/dark theme 🌞🌚
 * Written in vanilla CSS 🍦
-* Just 17 kB unminified 🤏
+* Just 15 kB unminified 🤏
 * Easily customizable 🔧
 * Print styles included 🖨
 * RTL-ready 👈
