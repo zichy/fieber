@@ -21,6 +21,7 @@
 
   --c-gray: #666;
   --c-red: #b30;
+  --c-yellow: #fe9;
 
   --i-triangle: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpolygon fill="black" points="5 10 10 0 0 0"/%3E%3C/svg%3E');
 
@@ -33,6 +34,7 @@
   :root {
     --c-gray: #999;
     --c-red: #f99;
+    --c-yellow: #ff9;
 
     --i-triangle: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpolygon fill="white" points="5 10 10 0 0 0"/%3E%3C/svg%3E');
   }
@@ -244,7 +246,7 @@ iframe {
 }
 
 :where(h2, h3, h4, h5, h6):target {
-  background-color: Mark;
+  background-color: var(--c-yellow);
   color: MarkText;
 }
 
@@ -306,6 +308,12 @@ nav ul {
 
 small {
   font-size: var(--f-size-small);
+}
+
+/* Mark */
+
+mark {
+  background-color: var(--c-yellow);
 }
 
 /* Abbreviation */
