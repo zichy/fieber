@@ -7,8 +7,9 @@
 */
 
 :root {
-  --f-sans: ui-sans-serif, sans-serif;
+  color-scheme: light dark;
 
+  --f-sans: ui-sans-serif, sans-serif;
   --f-body: ui-serif;
   --f-heading: var(--f-sans);
   --f-form: var(--f-sans);
