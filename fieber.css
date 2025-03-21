@@ -869,27 +869,6 @@ meter {
   background-color: var(--c-gray);
 }
 
-/* Disabled state */
-
-[disabled] {
-  border-color: var(--c-gray);
-  cursor: not-allowed;
-}
-
-/* Error state */
-
-[aria-invalid] {
-  border-color: var(--c-red) !important;
-}
-
-[aria-invalid]:focus {
-  outline-color: var(--c-red);
-}
-
-[aria-invalid] + p[id] {
-  color: var(--c-red);
-}
-
 /* Form spacing */
 
 form label:not(:first-of-type) {
@@ -908,8 +887,29 @@ fieldset label:not(:first-of-type) {
   margin-block-start: 2rem;
 }
 
-form p[id] {
-  margin-block-start: 0.5rem;
+form p[id]:has(+ input) {
+  margin-block: 0 0.5rem;
+}
+
+/* Disabled state */
+
+[disabled] {
+  border-color: var(--c-gray);
+  cursor: not-allowed;
+}
+
+/* Error state */
+
+[aria-invalid] {
+  border-color: var(--c-red) !important;
+}
+
+[aria-invalid]:focus {
+  outline-color: var(--c-red);
+}
+
+ p[id]:has(+ [aria-invalid]) {
+  color: var(--c-red);
 }
 
 
