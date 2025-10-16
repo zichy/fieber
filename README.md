@@ -25,7 +25,7 @@ Download the `fieber.css` file and insert it into the `<head>` of your website:
 <link rel="stylesheet" href="fieber.css">
 ```
 
-A npm package may come in the future.
+An npm package may come in the future.
 
 ## Customization
 
