@@ -10,10 +10,10 @@
   color-scheme: light dark;
 
   --f-sans: ui-sans-serif, sans-serif;
-  --f-body: ui-serif;
+  --f-body: ui-serif, serif;
   --f-heading: var(--f-sans);
   --f-form: var(--f-sans);
-  --f-code: ui-monospace;
+  --f-code: ui-monospace, monospace;
 
   --f-size: clamp(1.6rem, 1.75vw, 2rem);
   --f-size-small: 0.85em;
